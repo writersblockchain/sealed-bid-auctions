@@ -78,7 +78,16 @@ function App() {
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <div className="text-white text-xl font-bold mb-10 ml-16">
             EVM Sealed-bid Auctions
+            <h6 className="text-xs ml-14 hover:underline">
+              <a
+                href="https://docs.scrt.network/secret-network-documentation/confidential-computing-layer/ethereum-evm-developer-toolkit/usecases/vrf/vrf-developer-tutorial"
+                target="_blank"
+              >
+                [click here for docs]
+              </a>
+            </h6>
           </div>
+
           <Router>
             <Navigation />
 
