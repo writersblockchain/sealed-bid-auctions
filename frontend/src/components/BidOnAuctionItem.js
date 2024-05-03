@@ -120,68 +120,80 @@ export default function BidOnAuctionItem({ myAddress, setMyAddress }) {
     });
 
     let publicClientAddress;
-
     if (chainId === "1") {
-      publicClientAddress = mainnet.publicClientAddressEthereumMainnet;
+      publicClientAddress = mainnet.publicClientAddressEthereumMainnet
     }
     if (chainId === "56") {
-      publicClientAddress = mainnet.publicClientAddressBinanceSmartChainMainnet;
+      publicClientAddress = mainnet.publicClientAddressBinanceSmartChainMainnet
     }
     if (chainId === "137") {
-      publicClientAddress = mainnet.publicClientAddressPolygonMainnet;
+      publicClientAddress = mainnet.publicClientAddressPolygonMainnet
     }
     if (chainId === "10") {
-      publicClientAddress = mainnet.publicClientAddressOptimismMainnet;
+      publicClientAddress = mainnet.publicClientAddressOptimismMainnet
     }
     if (chainId === "42161") {
-      publicClientAddress = mainnet.publicClientAddressArbitrumOneMainnet;
+      publicClientAddress = mainnet.publicClientAddressArbitrumOneMainnet
     }
     if (chainId === "43114") {
-      publicClientAddress = mainnet.publicClientAddressAvalanceCChainMainnet;
+      publicClientAddress = mainnet.publicClientAddressAvalanceCChainMainnet
     }
     if (chainId === "8453") {
-      publicClientAddress = mainnet.publicClientAddressBaseMainnet;
+      publicClientAddress = mainnet.publicClientAddressBaseMainnet
     }
-    if (chainId === "534352") {
-      publicClientAddress = mainnet.publicClientAddressScrollMainnet;
-    }
+
     if (chainId === "59144") {
-      publicClientAddress = mainnet.publicClientAddressLineaMainnet;
+      publicClientAddress = mainnet.publicClientAddressLineaMainnet
+    }
+
+    if (chainId === "534352") {
+      publicClientAddress = mainnet.publicClientAddressScrollMainnet
+    }
+
+    if (chainId === "1088") {
+      publicClientAddress = mainnet.publicClientAddressMetisMainnet
     }
 
     if (chainId === "11155111") {
-      publicClientAddress = testnet.publicClientAddressSepoliaTestnet;
+      publicClientAddress = testnet.publicClientAddressSepoliaTestnet
     }
     if (chainId === "534351") {
-      publicClientAddress = testnet.publicClientAddressScrollTestnet;
+      publicClientAddress = testnet.publicClientAddressScrollTestnet
     }
     if (chainId === "80002") {
-      publicClientAddress = testnet.publicClientAddressPolygonAmoyTestnet;
+      publicClientAddress = testnet.publicClientAddressPolygonAmoyTestnet
     }
     if (chainId === "11155420") {
-      publicClientAddress = testnet.publicClientAddressOptimismSepoliaTestnet;
+      publicClientAddress = testnet.publicClientAddressOptimismSepoliaTestnet
     }
     if (chainId === "421614") {
-      publicClientAddress = testnet.publicClientAddressArbitrumSepoliaTestnet;
+      publicClientAddress = testnet.publicClientAddressArbitrumSepoliaTestnet
     }
     if (chainId === "84532") {
-      publicClientAddress = testnet.publicClientAddressBaseSepoliaTestnet;
+      publicClientAddress = testnet.publicClientAddressBaseSepoliaTestnet
     }
+
     if (chainId === "80085") {
-      publicClientAddress = testnet.publicClientAddressBerachainTestnet;
-    }
-    if (chainId === "59902") {
-      publicClientAddress = testnet.publicClientAddressMetisSepoliaTestnet;
-    }
-    if (chainId === "1313161555") {
-      publicClientAddress = testnet.publicClientAddressNearAuroraTestnet;
-    }
-    if (chainId === "59141") {
-      publicClientAddress = testnet.publicClientAddressLineaSepoliaTestnet;
+      publicClientAddress = testnet.publicClientAddressBerachainTestnet
     }
 
     if (chainId === "128123") {
-      publicClientAddress = testnet.publicClientAddressEtherlinkTestnet;
+      publicClientAddress = testnet.publicClientAddressEtherlinkTestnet
+    }
+    if (chainId === "59902") {
+      publicClientAddress = testnet.publicClientAddressMetisSepoliaTestnet
+    }
+    if (chainId === "1313161555") {
+      publicClientAddress = testnet.publicClientAddressNearAuroraTestnet
+    }
+    if (chainId === "59141") {
+      publicClientAddress = testnet.publicClientAddressLineaSepoliaTestnet
+    }
+    if (chainId === "51") {
+      publicClientAddress = testnet.publicClientAddressXDCApothemTestnet
+    }
+    if (chainId === "4202") {
+      publicClientAddress = testnet.publicClientAddressLiskSepoliaTestnet
     }
 
     const callbackAddress = publicClientAddress.toLowerCase();

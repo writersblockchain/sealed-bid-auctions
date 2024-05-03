@@ -114,11 +114,17 @@ function CreateAuctionItem() {
     if (chainId === "8453") {
       publicClientAddress = mainnet.publicClientAddressBaseMainnet;
     }
+
+    if (chainId === "59144") {
+      publicClientAddress = mainnet.publicClientAddressLineaMainnet;
+    }
+
     if (chainId === "534352") {
       publicClientAddress = mainnet.publicClientAddressScrollMainnet;
     }
-    if (chainId === "59144") {
-      publicClientAddress = mainnet.publicClientAddressLineaMainnet;
+
+    if (chainId === "1088") {
+      publicClientAddress = mainnet.publicClientAddressMetisMainnet;
     }
 
     if (chainId === "11155111") {
@@ -139,10 +145,15 @@ function CreateAuctionItem() {
     if (chainId === "84532") {
       publicClientAddress = testnet.publicClientAddressBaseSepoliaTestnet;
     }
-    if (chainId === "59902") {
-      publicClientAddress = testnet.publicClientAddressMetisSepoliaTestnet;
+
+    if (chainId === "80085") {
+      publicClientAddress = testnet.publicClientAddressBerachainTestnet;
     }
-    if (chainId === "59901") {
+
+    if (chainId === "128123") {
+      publicClientAddress = testnet.publicClientAddressEtherlinkTestnet;
+    }
+    if (chainId === "59902") {
       publicClientAddress = testnet.publicClientAddressMetisSepoliaTestnet;
     }
     if (chainId === "1313161555") {
@@ -151,8 +162,11 @@ function CreateAuctionItem() {
     if (chainId === "59141") {
       publicClientAddress = testnet.publicClientAddressLineaSepoliaTestnet;
     }
-    if (chainId === "128123") {
-      publicClientAddress = testnet.publicClientAddressEtherlinkTestnet;
+    if (chainId === "51") {
+      publicClientAddress = testnet.publicClientAddressXDCApothemTestnet;
+    }
+    if (chainId === "4202") {
+      publicClientAddress = testnet.publicClientAddressLiskSepoliaTestnet;
     }
 
     const callbackAddress = publicClientAddress.toLowerCase();
