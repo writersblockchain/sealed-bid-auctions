@@ -84,7 +84,7 @@ function CreateAuctionItem() {
     );
     const callbackGasLimit = 300000;
 
-    // Create the data object from form state
+    // Create the data object from fsorm state
     const data = JSON.stringify({
       name: name,
       description: description,
@@ -230,7 +230,13 @@ function CreateAuctionItem() {
     ]);
 
     const gasFee = await provider.getGasPrice();
-    const amountOfGas = gasFee.mul(callbackGasLimit).mul(3).div(2);
+
+    let amountOfGas;
+    if (chainId === "4202") {
+      amountOfGas = gasFee.mul(callbackGasLimit).mul(100000).div(2);
+    } else {
+      amountOfGas = gasFee.mul(callbackGasLimit).mul(3).div(2);
+    }
 
     const tx_params = {
       gas: hexlify(150000),
