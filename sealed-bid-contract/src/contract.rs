@@ -169,7 +169,7 @@ fn create_bid(
 
     let storage_item = BidItem {
         amount: input.amount,
-        wallet_address: input.wallet_address,
+        bidder_address: input.bidder_address,
         index: index,
     };
 
