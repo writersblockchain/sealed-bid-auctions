@@ -48,7 +48,8 @@ createWeb3Modal({
           //Mantle Mainnet
         5000: "https://www.mantle.xyz/logo-light.svg",
 
-
+        //Sei Mainnet
+        1329: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFGvgacXR_ZJo61dPkc3xNs1enVpq0v64vGg&s",
    
        //Sepolia Testnet
        11155111:
@@ -101,7 +102,7 @@ createWeb3Modal({
          9768: "https://assets.coingecko.com/coins/images/33947/large/zcM8MEO5_400x400.png?1703537595",
 
          // Moonbeam Testnet
-         1287: "https://moonbase.moonscan.io/assets/moonbase/images/svg/logos/chain-light.svg?v=24.6.1.0",
+         1287: "https://cdn-images-1.medium.com/max/1200/1*x0g0qIexW1fDNNIXyUQ2Hg.png",
 
           // Fhenix Testnet
           8008135: "https://media.licdn.com/dms/image/D4D0BAQFtUjFKqv_DJA/company-logo_200_200/0/1695715998703/fhenix_logo?e=2147483647&v=beta&t=U2cvAqKuWeEqE5Cb4HgyuBmVTUcBuZvsDi0JdivU3nw",
@@ -111,6 +112,15 @@ createWeb3Modal({
 
          //Mantle Testnet
        5003: "https://www.mantle.xyz/logo-light.svg",
+
+       //Gnosis Testnet
+       10200: "https://cryptologos.cc/logos/gnosis-gno-gno-logo.svg?v=032",
+
+       //Sei Testnet
+       713715: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFGvgacXR_ZJo61dPkc3xNs1enVpq0v64vGg&s",
+
+       //Ubit Testnet
+       44433: "https://cdn.dorahacks.io/static/files/190a27e11a44bf8cd0c07094264b1b85.png@256h.webp",
 
   },
   ethersConfig,
@@ -133,6 +143,9 @@ createWeb3Modal({
     mainnets.MoonbeamMainnet,
     mainnets.CoreMainnet,
     mainnets.MantleMainnet,
+    mainnets.SeiMainnet,
+    mainnets.GnosisMainnet,
+    
     testnets.sepoliaTestnet,
     testnets.scrollTestnet,
     testnets.polygonTestnet,
@@ -151,7 +164,10 @@ createWeb3Modal({
     testnets.MoonbaseAlphaTestnet,
     testnets.FhenixTestnet,
     testnets.CoreTestnet,
-    testnets.MantleTestnet
+    testnets.MantleTestnet,
+    testnets.GnosisChiadoTestnet,
+    testnets.SeiTestnet,
+    testnets.UbitTestnet,
   ],
   projectId,
   enableAnalytics: true, // Optional - defaults to your Cloud configuration
