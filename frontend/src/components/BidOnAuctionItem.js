@@ -119,6 +119,9 @@ export default function BidOnAuctionItem({ myAddress, setMyAddress }) {
       index: itemKey.toString(),
     });
 
+   
+    let publicClientAddress
+
     if (chainId === "1") {
       publicClientAddress = mainnet.publicClientAddressEthereumMainnet
     }

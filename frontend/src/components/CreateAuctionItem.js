@@ -91,6 +91,8 @@ function CreateAuctionItem() {
       end_time: minutes,
     });
 
+   
+    let publicClientAddress
     if (chainId === "1") {
       publicClientAddress = mainnet.publicClientAddressEthereumMainnet
     }
