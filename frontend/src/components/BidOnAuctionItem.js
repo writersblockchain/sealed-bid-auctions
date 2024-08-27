@@ -189,6 +189,16 @@ export default function BidOnAuctionItem({ myAddress, setMyAddress }) {
       publicClientAddress = mainnet.publicClientAddressCronosMainnet
     }
 
+    if (chainId === "388") {
+      publicClientAddress = mainnet.publicClientAddressCronosZkEvm
+    }
+
+    if (chainId === "324") {
+      publicClientAddress = mainnet.publicClientAddressZksyncEraMainnet
+    }
+
+
+
     if (chainId === "11155111") {
       publicClientAddress = testnet.publicClientAddressSepoliaTestnet
     }
@@ -261,6 +271,13 @@ export default function BidOnAuctionItem({ myAddress, setMyAddress }) {
       publicClientAddress = testnet.publicClientAddressCronosTestnet
     }
 
+    if (chainId === "282") {
+      publicClientAddress = testnet.publicClientAddressCronosZkEvmTestnet
+    }
+
+    if (chainId === "300") {
+      publicClientAddress = testnet.publicClientAddressZkSyncEraSepoliaTestnet
+    }
 
     const callbackAddress = publicClientAddress.toLowerCase();
     console.log("callback address: ", callbackAddress);
@@ -337,6 +354,11 @@ export default function BidOnAuctionItem({ myAddress, setMyAddress }) {
 
     if (chainId === "1287") {
       amountOfGas = gasFee.mul(callbackGasLimit).mul(1000).div(2);
+      my_gas = 15000000;
+    }
+
+    if (chainId === "300") {
+      amountOfGas = gasFee.mul(callbackGasLimit).mul(100000).div(2);
       my_gas = 15000000;
     }
 
