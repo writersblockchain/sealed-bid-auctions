@@ -210,7 +210,7 @@ function App() {
             EVM Sealed-bid Auctions
             <h6 className="text-xs ml-14 hover:underline">
               <a
-                href="https://docs.scrt.network/secret-network-documentation/confidential-computing-layer/ethereum-evm-developer-toolkit/usecases/vrf/vrf-developer-tutorial"
+                href="https://docs.scrt.network/secret-network-documentation/confidential-computing-layer/ethereum-evm-developer-toolkit/usecases/sealed-bid-auction"
                 target="_blank"
               >
                 [click here for docs]
