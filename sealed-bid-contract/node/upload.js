@@ -76,7 +76,7 @@ let instantiate_contract = async () => {
       sender: wallet.address,
       code_hash: contractCodeHash,
       init_msg: init,
-      label: "SnakePath Encrypt " + Math.ceil(Math.random() * 10000),
+      label: "SecretPath Sealed Bid Auction demo " + Math.ceil(Math.random() * 10000),
     },
     {
       gasLimit: 400_000,
